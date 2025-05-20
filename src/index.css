@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@keyframes spinSlow {
+     0% {
+       transform: rotate(0deg);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+   }
+   
+   .spin-slow {
+     animation: spinSlow 10s linear infinite;
+   }
+   
+   @keyframes popFadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px) scale(0.8);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-5px) scale(1.05);
+    }
+    100% {
+      transform: translateY(0px) scale(1);
+    }
+  }
+  
+  .animate-popFadeUp {
+    animation: popFadeUp 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+    width: max-content;
+  }
+  
+  
