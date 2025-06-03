@@ -229,17 +229,27 @@ const About = () => {
   </div>
 
   {/* Spacer Div for Consistent Height */}
-  <div className='h-auto w-full px-30 flex justify-between relative items-center'>
-    <div className='h-full'>
-    <p className='text-xl sm:text-xl font-serif bg-bottom bg-cover bg-clip-text text-transparent bg-[url("https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg")]'>This Team</p>
-    <div className='absolute top-[3rem] left-30 h-20 w-20 border-r border-b border-[#124e66] hidden sm:flex items-center justify-center z-10'>
-          <hr className='h-[1px] w-[6rem] absolute mt-3 ml-3 rotate-45 text-[#124e66]' />
-        </div>
-        <div className='h-5 mb-30'>
-        </div>
-    </div>
+  <div className='h-auto w-full flex justify-between relative items-center'>
+   <div className="w-[100vw] h-[50vh] md:min-h-screen flex flex-col items-center justify-center px-4 py-10 bg-white">
 
-    <p className='w-[50%] text-lg font-serif text-zinc-400'>We as an AVN team are dedicated to serve you the best and for aspect of Tech and save you from any bad user experience and less impressive user interface/service.</p>
+  {/* Responsive heading with background clipped text */}
+  <p className="text-2xl sm:text-3xl md:text-4xl font-serif bg-bottom bg-cover bg-clip-text text-transparent text-center bg-[url('https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg')]">
+    This Team
+  </p>
+
+  {/* Decorative border element (only on small screens and above) */}
+  <div className="relative w-full flex justify-center">
+  </div>
+
+  {/* Spacer */}
+  <div className="my-8"></div>
+
+  {/* Description text */}
+  <p className="w-full sm:w-[90%] md:w-[70%] lg:w-[50%] text-base sm:text-lg text-center font-serif text-zinc-600 px-2">
+    We as an AVN team are dedicated to serve you the best in all aspects of technology — ensuring a seamless user experience and an impressive user interface/service.
+  </p>
+</div>
+
   </div>
 </div>
 {/* Our Founders section end */}

@@ -45,7 +45,7 @@ const Services = () => {
 
 <h1
   ref={headingRef}
-  className='text-3xl md:text-4xl lg:text-6xl font-serif mb-2 bg-bottom bg-cover bg-clip-text text-transparent bg-[url("https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg")]'>
+  className='text-3xl md:text-4xl overflow-x-hidden lg:text-6xl font-serif mb-2 bg-bottom bg-cover bg-clip-text text-transparent bg-[url("https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg")]'>
   Our Work
 </h1>
 
@@ -117,20 +117,36 @@ const Services = () => {
 <CompanySection/>
 
 {/* sections last section */}
-<div className='h-[60vh] flex justify-center bg-[#D3D9D4] relative  gap-4 items-center w-full pt-10'>
-    <div className='h-full flex justify-start px-15 rounded-2xl py-8 items-end w-[40vw] bg-[#004D43]'>
-      <p className='text-lg bg-transparent px-5 border-1 text-[#CDEA68] border-[#CDEA68] py-[3px] rounded-full'>2025</p>
-      <p className='absolute text-5xl font-serif top-[47%] left-[20%] text-[#CDEA68]'>AVN</p>
-    </div>
-    <div className='h-full flex flex-col justify-center relative  px-15 rounded-2xl py-8 items-center w-[25vw] bg-black'>
-      <img className='w-25' src="../src/assets/logowhite.png" alt="" />
-      <p className='text-lg mt-55 mr-25 absolute bg-transparent px-5 border-1 text-white border-white py-[3px] rounded-full'>rate us 5.0</p>
-    </div>
-    <div className='h-full flex justify-center relative px-15 rounded-2xl bg-[#212121] py-8 items-center w-[25vw]'>
-      <img className='w-25'  src="https://ochi.design/wp-content/uploads/2022/04/logo003.png" alt="" />
-      <p className='text-lg mt-55 mr-25 absolute bg-transparent px-5 border-1 text-white border-white py-[3px] rounded-full'>best 2 U</p>
-    </div>
+<div className="w-full min-h-[60vh] bg-[#D3D9D4] flex flex-col md:flex-row items-center justify-center gap-6 px-4 py-10">
+
+  {/* Box 1 – AVN */}
+  <div className="w-full md:w-[40%] h-[250px] md:h-[350px] bg-[#004D43] rounded-2xl relative px-6 py-4 flex items-start justify-start flex-col">
+    <p className="text-sm md:text-base bg-transparent px-4 border border-[#CDEA68] text-[#CDEA68] py-1 rounded-full z-10">
+      2025
+    </p>
+    <p className="absolute text-4xl md:text-6xl font-serif text-[#CDEA68] left-6 top-1/2 -translate-y-1/2">
+      AVN
+    </p>
+  </div>
+
+  {/* Box 2 – Logo & Rate Us */}
+  <div className="w-full md:w-[30%] h-[250px] md:h-[350px] bg-black rounded-2xl relative px-6 py-4 flex items-center justify-center">
+    <img className="w-20 md:w-24" src="../src/assets/logowhite.png" alt="Logo" />
+    <p className="text-sm md:text-base absolute bottom-4 right-4 bg-transparent px-4 border border-white text-white py-1 rounded-full">
+      rate us 5.0
+    </p>
+  </div>
+
+  {/* Box 3 – Partner Logo */}
+  <div className="w-full md:w-[30%] h-[250px] md:h-[350px] bg-[#212121] rounded-2xl relative px-6 py-4 flex items-center justify-center">
+    <img className="w-20 md:w-24" src="https://ochi.design/wp-content/uploads/2022/04/logo003.png" alt="Partner Logo" />
+    <p className="text-sm md:text-base absolute bottom-4 right-4 bg-transparent px-4 border border-white text-white py-1 rounded-full">
+      best 2 U
+    </p>
+  </div>
+  
 </div>
+
     </>
   )
 }

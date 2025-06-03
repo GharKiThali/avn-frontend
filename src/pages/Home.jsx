@@ -108,7 +108,7 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <div className='bg-[#D3D9D4] overflow-x-hidden'>
-      <div className="min-h-[90vh] flex flex-col md:flex-row justify-center items-center px-6 md:px-20 w-full bg-[#D3D9D4] font-serif relative overflow-hidden gap-6 md:gap-12">
+      <div className="min-h-[100vh] flex flex-col md:flex-row justify-center items-center px-6 md:px-20 w-full font-serif relative overflow-hidden gap-6 md:gap-12">
         <div className="flex flex-col items-start gap-4 z-10 pt-20 text-center md:text-left w-full md:w-1/2">
           <h1
             ref={heroHeadingRef}
@@ -171,14 +171,14 @@ const Home = () => {
       {/* Challenge Section */}
       <div
         ref={challengeRef}
-        className="h-auto min-h-[80vh] flex flex-col md:flex-row justify-around w-full text-xl text-[#394d55] font-serif bg-[#D3D9D4] px-6 md:p-20 gap-10"
+        className="h-auto min-h-[60vh] flex flex-col md:flex-row justify-around w-full text-xl text-[#394d55] font-serif bg-[#D3D9D4] px-6 md:p-20 gap-10"
       >
         <div>
-          <p className='text-3xl md:text-2xl mb-10 bg-top bg-clip-text text-transparent bg-[url("https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg")]'>
+          <p className='text-3xl md:text-4xl mb-10 bg-top bg-clip-text text-transparent bg-[url("https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg")]'>
             The Challenge
           </p>
-          <div className='h-20 w-20 border-r-1 flex relative items-center border-b-1 border-[#124e66]'>
-            <hr className='h-.5 w-23 absolute mt-3  rotate-45' />
+          <div className='h-15 w-15 border-r-1 flex relative items-center border-b-1 border-[#124e66]'>
+            <hr className='h-.5 w-17.5 absolute mt-3  rotate-45' />
           </div>
         </div>
 
@@ -298,11 +298,11 @@ const Home = () => {
   className="h-auto min-h-[80vh] flex flex-col mt-10 md:flex-row justify-around w-full text-xl text-[#394d55] font-serif bg-[#D3D9D4] px-6 md:p-20 gap-10"
 >
   <div className="text-center md:text-left">
-    <p className='text-3xl md:text-2xl mb-10 bg-top bg-clip-text text-transparent bg-[url("https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg")]'>
+    <p className='text-3xl md:text-4xl mb-10 bg-top bg-clip-text text-transparent bg-[url("https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg")]'>
       Community Which<br/>Works Effortlessly
     </p>
-    <div className='h-20 w-20 border-r-1 flex relative items-center border-b-1 border-[#124e66] mx-auto md:mx-0'>
-      <hr className='h-.5 w-23 absolute mt-3  rotate-45' />
+    <div className='h-15 w-15 border-r-1 flex relative items-center border-b-1 border-[#124e66] mx-auto md:mx-0'>
+      <hr className='h-.5 w-17.5 absolute mt-3  rotate-45' />
     </div>
   </div>
 

@@ -56,9 +56,7 @@ const Header = () => {
   const linkClasses = ({ isActive }) =>
     `relative text-lg transition-all duration-300
      ${isActive ? 'text-black font-semibold' : 'text-[#124E66]'}
-     after:content-[''] after:absolute after:left-0 after:-bottom-1
-     after:w-0 hover:after:w-full after:h-[2px] after:bg-[#124E66]
-     after:transition-all after:duration-300`
+     `
 
   return (
     <div
@@ -75,12 +73,11 @@ const Header = () => {
         </div>
 
         {/* Logo */}
-        <Magnetic strength={1}>
           <h1 className='text-2xl font-bold font-serif text-[#124E66]'>AVN <span className='text-zinc-500 font-light'>agency</span></h1>
-        </Magnetic>
+      
 
         {/* Desktop Nav */}
-        <nav className='hidden md:flex gap-10 rounded-full bg-white/70 px-12 py-2'>
+        <nav className='hidden md:flex gap-10 rounded-full bg-white/70 px-12 py-3'>
           <NavLink to="/" className={linkClasses}>Launch</NavLink>
           <NavLink to="/about" className={linkClasses}>Insights</NavLink>
           <NavLink to="/services" className={linkClasses}>Projects</NavLink>

@@ -29,11 +29,11 @@ const FeedbackSlider = () => {
       {/* Left Section */}
       <div className="lg:w-[60vw] w-full">
         <div className="mb-8">
-          <p className='text-3xl md:text-4xl lg:text-2xl font-serif mb-10 bg-top bg-clip-text text-transparent bg-[url("https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg")]'>
+          <p className='text-3xl md:text-4xl lg:text-4xl font-serif mb-10 bg-top bg-clip-text text-transparent bg-[url("https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg")]'>
             Feedback From<br />Our Clients
           </p>
-          <div className='h-20 w-20 border-r-1 flex relative items-center border-b-1 border-[#124e66] mx-auto md:mx-0'>
-            <hr className='h-[1px] w-24 absolute rotate-45 bg-[#124e66]' />
+          <div className='h-15 w-15 border-r-1 flex relative items-center border-b-1 border-[#124e66] mx-auto md:mx-0'>
+            <hr className='h-[1px] w-17.5 mt-3 absolute rotate-45 bg-[#124e66]' />
           </div>
         </div>
 

@@ -79,6 +79,7 @@ function ForgotPass() {
             onChange={(e) => setOtp(e.target.value)}
             className="w-full p-2 border rounded mb-4"
           />
+          <p onClick={handleSendOTP} className='ml-70 mb-2 hover:font-bold' >Resend OTP</p>
           <button
             onClick={handleVerifyOTP}
             className="w-full bg-blue-500 text-white py-2 rounded"

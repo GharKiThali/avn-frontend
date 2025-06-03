@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
- baseURL: 'https://avn-467a.onrender.com', // Backend URL
+ baseURL: 'http://localhost:8080', // Backend URL
   withCredentials: true, // Cookies ko bhejne ke liye
 });
 

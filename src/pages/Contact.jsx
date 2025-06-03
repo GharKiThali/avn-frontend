@@ -104,21 +104,51 @@ const Contact = () => {
       </div>
 
       {/* Placeholder Image Text Section */}
-      <div className='h-[90vh] w-[80vw] rounded-4xl overflow-hidden mt-50 flex bg-white'>
-        <div className='h-full pl-20 relative p-20 w-[50%]'>
-          <p className='text-3xl font-serif mb-2 bg-bottom bg-cover bg-clip-text text-transparent bg-[url("https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg")]'>Contact Us</p>
-          <div className='absolute top-[35rem] md:top-[9rem] left-20 h-20 w-20 border-r border-b border-[#124e66] hidden sm:flex items-center justify-center z-10'>
-         <hr className='h-[1px] w-[6rem] absolute mt-3 ml-3 rotate-45 text-[#124e66]' />
-         </div>
-         <p className='mt-35 text-xl text-zinc-400'>104 Palakpuri, Opposite SBI Bank,<br/> Gwalior, Madhya Pradesh, India</p>
-         <p className='mt-5 text-xl text-zinc-400'>avnagency@gmail.com | +91 8878895052</p>
-         <p className='mt-5 text-zinc-400'>+91 6388640308 | +91 7354387417 | +91 6265471204</p>
-         <p className='mt-10 text-[#124e66]'>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-        </div>
-        <div className='h-full w-[50%] bg-amber-500'>
-          <video autoPlay loop muted src="https://cuberto.com/assets/home/summary/1.mp4?3"></video>
-        </div>
-      </div>
+     <div className="w-full max-w-[90vw] mx-auto rounded-3xl overflow-hidden mt-12 flex flex-col md:flex-row bg-white shadow-md">
+
+  {/* Left: Contact Info */}
+  <div className="w-full md:w-1/2 p-6 md:p-12 relative">
+    {/* Heading */}
+    <p className="text-2xl md:text-3xl font-serif mb-4 bg-bottom bg-cover bg-clip-text text-transparent bg-[url('https://images.ctfassets.net/h6goo9gw1hh6/6prdYxODAmAJXYbHmZn8GI/cb1017a48a48e663a7b44791a85c2f17/Color-Scheme_PROFESSIONAL-2.jpg?w=1600&h=700&fl=progressive&q=70&fm=jpg')]">
+      Contact Us
+    </p>
+
+    {/* Decorative Border */}
+    <div className="absolute top-[80%] md:top-[9rem] left-10 h-16 w-16 border-r border-b border-[#124e66] hidden sm:flex items-center justify-center z-10">
+      <hr className="h-[1px] w-[4rem] rotate-45 text-[#124e66]" />
+    </div>
+
+    {/* Address & Contact */}
+    <p className="mt-6 text-base md:text-lg text-zinc-500">
+      104 Palakpuri, Opposite SBI Bank,<br />
+      Gwalior, Madhya Pradesh, India
+    </p>
+
+    <p className="mt-4 text-base md:text-lg text-zinc-500">
+      avnagency@gmail.com | +91 8878895052
+    </p>
+
+    <p className="mt-4 text-sm md:text-base text-zinc-500">
+      +91 6388640308 | +91 7354387417 | +91 6265471204
+    </p>
+
+    <p className="mt-6 text-xs md:text-sm text-[#124e66]">
+      This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+    </p>
+  </div>
+
+  {/* Right: Video */}
+  <div className="w-full md:w-1/2 h-[250px] md:h-auto bg-white">
+    <video
+      className="w-full h-full object-contain"
+      autoPlay
+      loop
+      muted
+      src="https://cuberto.com/assets/home/summary/1.mp4?3"
+    ></video>
+  </div>
+</div>
+
     </div>
   );
 };
